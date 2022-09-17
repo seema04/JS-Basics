@@ -1,0 +1,36 @@
+body{
+  text-align: center;
+  padding:20px;
+}
+#player{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#red{
+  background-color: indianred;
+  width:60px;
+  height:30px;
+}
+
+#yellow{
+  background-color: orange;
+  width:60px;
+  height:30px;
+}
+
+#green{
+  background-color: darkgreen;
+  width:60px;
+  height:30px;
+}
+
+button{
+  margin-top:30px;
+  background-color: lightblue;
+  border:none;
+  padding:5px 8px;
+  color:white;
+  border-radius: 5px;
+}
+

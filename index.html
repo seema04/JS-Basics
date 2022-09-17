@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <script src="/js1/DOM.js"></script>
+  <title>Arrays</title>
+</head>
+
+<body>
+    <ul>
+      <li class="c1">List1</li>
+      <li id = "first">List2</li>
+      <li class="c1">List3</li>
+    </ul>
+</body>
+
+  <script> 
+  // Jab hamne document.getelementbyid kiya toh item me li element(2nd one) as a 'object' store hua.
+
+  let item = document.getElementById("first");
+  console.log(item.innerHTML); 
+  // ye value get krne ka tarika hai.
+
+
+  // value set krne ke liye hame,
+  item.innerHTML = "<p> HELLO </p>"
+  
+  // to select multiple elements.
+   let item1 = document.getElementsByClassName("c1");
+   console.log(item1);
+
+  //  ye output nahi dega,kyu? bcz ye ab 2 element ka array ban gya, aur array access krne ke liye loop cahiye hoga.
+   console.log(item1.length);
+   for (const i of item1) {
+    i.innerHTML = " <p> changes by className </p> "
+   }
+  </script>
+</html>

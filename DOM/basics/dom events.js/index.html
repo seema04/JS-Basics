@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom event</title>
+
+</head>
+
+<body>
+  <!-- inlcuding events through inline  -->
+  <!-- <button id="btn" onclick="btnClick()">Button 1</button> -->
+   
+  <!-- through addeventlistener. -->
+  <!-- <button id="btn1">Button 2</button> -->
+
+
+  <!-- mouse events. -->
+
+ <div id="box" 
+ style="width:100px; 
+ height:100px; 
+ background-color:lightblue;" onclick="funOnClick
+ ()"
+ oncontextmenu="funOnContextMenu()"></div>
+
+
+
+
+
+
+
+
+  <script>
+   
+    const funOnClick = () => { alert("click event");}
+
+    const funOnContextMenu = () => { alert("right clicked menu");}
+
+
+     function btnClick (){
+      alert('button 1 clicked!');
+     }
+
+     
+
+
+    // ***********event listener************
+
+    //  let addButton = document.querySelector('#btn1');
+    //  addButton.addEventListener('click', function(){
+    //   alert('button 2 clicked!')
+    // });
+
+    // we can have multiple add event listener to a single element.
+
+    // addButton.addEventListener('mouseover', function(){
+    //   addButton.style.background = 'indianred';
+    //   addButton.style.color = 'white';
+    //   addButton.style.border = '0';
+    //   addButton.style.scale = '1.2';
+    // })   
+
+  </script>
+</body>
+</html>

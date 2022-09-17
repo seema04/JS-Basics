@@ -1,0 +1,26 @@
+.input-div{
+  width:60%;
+  height:350px;
+  background-color: thistle;
+  text-align: center;
+}
+h1{
+  padding-top:20px;
+}
+.inp{
+  padding:8px;
+  margin-bottom: 10px;
+  width:75%;
+}
+.submit-btn{
+  width:80%;
+  background-color: lightblue;
+  padding:8px;
+  border:none;
+  margin-top:10px;
+}
+.error{
+  margin:0 0 0 28px; 
+  color:red;
+  text-align: left;
+}

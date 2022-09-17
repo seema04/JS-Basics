@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <link rel="icon" href="data:,">
+  <title>Form Validation</title>
+</head>
+<body>
+   <form id="submit-form" action="" onsubmit="return validateForm()">
+    <div class="input-div">
+      <h1>Login</h1>
+      <input type="text" name="name" id="name" class="inp" placeholder="Enter name"><br>
+      <p id="name-error" class="error"></p>
+      <input type="password" id="password" placeholder="Password" class="inp"><br>
+      <p id="pswd-error" class="error"></p>
+      <button class="submit-btn">Submit</button>
+    </div>
+   </form>
+
+   <script src="form.js"></script>
+</body>
+</html>

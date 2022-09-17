@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>Key Event</title>
+  <style>
+    body{
+      /* height: 2000px; */
+      /* width:1000px; */
+      padding:100px;
+      background-color: cornsilk;
+    }
+
+    #myDiv{
+      padding:30px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div id="myDiv">
+    <button class="btn3">Click me</button>
+  </div>
+
+
+
+  <script>
+    // to know which key event has been pressed,we have to use window.
+    // const checkKey = (storeskeyinfo) => {console.log(storeskeyinfo)};
+
+    // window.addEventListener("keydown",checkKey);
+  
+
+    // ***********scroll events*********.
+    // window.addEventListener("scroll",function(){
+    //   console.log('scrolling.......');
+    // })
+
+
+    // window.addEventListener("wheel",function(scrollinfo){
+    //   if(scrollinfo.deltaY < 0)
+    //   console.log('scrolling up');
+    //   else if(scrollinfo.deltaY > 0)
+    //   console.log('scrolling down');
+    // })
+
+
+    // ************* event bubling and capturing ****************
+    let eventBubDiv = document.querySelector('#myDiv');
+    let eventBubBtn = document.querySelector('.btn3'); 
+
+
+    eventBubDiv.addEventListener("click", function(){console.log("div event!")},false);
+
+    // if third parameter is not given, by default event bubling will occur(neeche se upar).
+    eventBubBtn.addEventListener("click", function(){console.log("btn event!")},false);
+
+    document.body.addEventListener("click", function(){console.log("body event!")},false);
+    
+
+    // if the third parameter in eventlistener is set to true, then the event flow would be from top to bottom(html->body->div->button) which is called, event capturing.
+
+
+
+
+  </script>
+</body>
+</html>
